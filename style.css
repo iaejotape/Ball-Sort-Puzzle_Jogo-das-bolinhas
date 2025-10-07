@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#jogo-cointainer {
+    text-align: center;
+}
+
+#tubos-container {
+    display: flex;
+    gap: 20px; /* espaco entre tubos */
+    margin: 30px 0;
+    justify-content: center;
+    align-items: flex-end; /* alinha os tubos na base */
+}
+
+.tubo {
+    width: 60px;
+    height: 200px;
+    border: 3px solid #333;
+    border-top: none; /* tubo aberto em cima */
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column-reverse; /* empilha as bolinha de baixo p cima */
+    align-items: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tubo.selected {
+    
+}
